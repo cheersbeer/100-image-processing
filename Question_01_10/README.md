@@ -16,7 +16,7 @@ red = img[:, :, 2].copy()
 
 |入力 (imori.jpg)|出力 (answer_1.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answer_1.jpg)|
+|![](imori.jpg)|![](answers/answer_1.jpg)|
 
 答え >> answer_1.py
 
@@ -29,7 +29,7 @@ Y = 0.2126 R + 0.7152 G + 0.0722 B
 
 |入力 (imori.jpg)|出力 (answer_2.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answer_2.jpg)|
+|![](imori.jpg)|![](answers/answer_2.jpg)|
 
 答え >> answer_2.py
 
@@ -46,7 +46,7 @@ y = { 0 (if y < 128)
 
 |入力 (imori.jpg)|出力 (answer_3.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answer_3.jpg)|
+|![](imori.jpg)|![](answers/answer_3.jpg)|
 
 答え >> answer_3.py
 
@@ -81,7 +81,7 @@ argmax_{t} X = argmax_{t} Sb^2
 
 |入力 (imori.jpg)|出力 (th = 143) (answer_4.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answer_4.jpg)|
+|![](imori.jpg)|![](answers/answer_4.jpg)|
 
 答え >> answer_4.py
 
@@ -135,7 +135,7 @@ X = C (1 - |H' mod 2 - 1|)
 
 |入力 (imori.jpg)|出力 (answer_5.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answer_5.jpg)|
+|![](imori.jpg)|![](answers/answer_5.jpg)|
 
 答え >> answer_5.py
 
@@ -153,7 +153,7 @@ val = {  32  (0 <= val < 63)
 ```
 |入力 (imori.jpg)|出力 (answer_6.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answer_6.jpg)|
+|![](imori.jpg)|![](answers/answer_6.jpg)|
 
 答え >> answer_6.py
 
@@ -173,7 +173,7 @@ v = 1/|R| * Sum_{i in R} v_i
 
 |入力 (imori.jpg)|出力 (answer_7.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answer_7.jpg)|
+|![](imori.jpg)|![](answers/answer_7.jpg)|
 
 答え >> answer_7.py
 ## Q.8. Maxプーリング
@@ -182,7 +182,7 @@ v = 1/|R| * Sum_{i in R} v_i
 
 |入力 (imori.jpg)|出力 (answer_8.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answer_8.jpg)|
+|![](imori.jpg)|![](answers/answer_8.jpg)|
 
 答え >> answer_8.py
 
@@ -210,7 +210,7 @@ K =  1/16 [ 2 4 2 ]
 
 |入力 (imori_noise.jpg)|出力 (answer_9.jpg)|
 |:---:|:---:|
-|![](imori_noise.jpg)|![](answer_9.jpg)|
+|![](imori_noise.jpg)|![](answers/answer_9.jpg)|
 
 答え >> answer_9.py
 
@@ -225,6 +225,6 @@ K =  1/16 [ 2 4 2 ]
 
 |入力 (imori_noise.jpg)|出力 (answer_10.jpg)|
 |:---:|:---:|
-|![](imori_noise.jpg)|![](answer_10.jpg)|
+|![](imori_noise.jpg)|![](answers/answer_10.jpg)|
 
 答え >> answer_10.py
