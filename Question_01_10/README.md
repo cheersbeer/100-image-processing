@@ -16,7 +16,7 @@ red = img[:, :, 2].copy()
 
 |入力 (imori.jpg)|出力 (answer_1.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answers/answer_1.jpg)|
+|![](imori.jpg)|![](answer_1.jpg)|
 
 答え >> answer_1.py
 
@@ -29,7 +29,7 @@ Y = 0.2126 R + 0.7152 G + 0.0722 B
 
 |入力 (imori.jpg)|出力 (answer_2.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answers/answer_2.jpg)|
+|![](imori.jpg)|![](answer_2.jpg)|
 
 答え >> answer_2.py
 
@@ -46,7 +46,7 @@ y = { 0 (if y < 128)
 
 |入力 (imori.jpg)|出力 (answer_3.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answers/answer_3.jpg)|
+|![](imori.jpg)|![](answer_3.jpg)|
 
 答え >> answer_3.py
 
@@ -77,11 +77,11 @@ y = { 0 (if y < 128)
 ```bash
 argmax_{t} X = argmax_{t} Sb^2
 ```
-となる。すなわち、Sb^2 =  w0 * w1 * (M0 - M1) ^2 となる、閾値tを二値化の閾値とすれば良い。
+となる。すなわち、Sb^2 =  w0 * w1 * (M0 - M1) ^2 が最大となる、閾値tを二値化の閾値とすれば良い。
 
-|入力 (imori.jpg)|出力 (th = 143) (answer_4.jpg)|
+|入力 (imori.jpg)|出力 (th = 127) (answer_4.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answers/answer_4.jpg)|
+|![](imori.jpg)|![](answer_4.jpg)|
 
 答え >> answer_4.py
 
@@ -92,7 +92,13 @@ HSV変換を実装して、色相Hを反転せよ。
 
 HSV変換とは、**Hue(色相)**、**Saturation(彩度)**、**Value(明度)** で色を表現する手法である。
 
-- Hue ... 色合いを0~360度で表現し、赤や青など色の種類を示す。 ( 0 <= H < 360)
+- Hue ... 色合いを0~360度で表現し、赤や青など色の種類を示す。 ( 0 <= H < 360) 色相は次の色に対応する。
+
+```bash
+赤 黄色  緑  水色  青  紫   赤
+0  60  120  180 240 300 360
+```
+
 - Saturation ... 色の鮮やかさ。Saturationが低いと灰色さが顕著になり、くすんだ色となる。 ( 0<= S < 1)
 - Value ... 色の明るさ。Valueが高いほど白に近く、Valueが低いほど黒に近くなる。 ( 0 <= V < 1)
 
@@ -119,7 +125,7 @@ HSV -> RGB変換は以下の式で定義される。
 ```bash
 C = S
 
-H' = H // 60
+H' = H / 60
 
 X = C (1 - |H' mod 2 - 1|)
 
@@ -135,7 +141,7 @@ X = C (1 - |H' mod 2 - 1|)
 
 |入力 (imori.jpg)|出力 (answer_5.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answers/answer_5.jpg)|
+|![](imori.jpg)|![](answer_5.jpg)|
 
 答え >> answer_5.py
 
@@ -153,7 +159,7 @@ val = {  32  (0 <= val < 63)
 ```
 |入力 (imori.jpg)|出力 (answer_6.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answers/answer_6.jpg)|
+|![](imori.jpg)|![](answer_6.jpg)|
 
 答え >> answer_6.py
 
@@ -173,7 +179,7 @@ v = 1/|R| * Sum_{i in R} v_i
 
 |入力 (imori.jpg)|出力 (answer_7.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answers/answer_7.jpg)|
+|![](imori.jpg)|![](answer_7.jpg)|
 
 答え >> answer_7.py
 ## Q.8. Maxプーリング
@@ -182,7 +188,7 @@ v = 1/|R| * Sum_{i in R} v_i
 
 |入力 (imori.jpg)|出力 (answer_8.jpg)|
 |:---:|:---:|
-|![](imori.jpg)|![](answers/answer_8.jpg)|
+|![](imori.jpg)|![](answer_8.jpg)|
 
 答え >> answer_8.py
 
@@ -210,7 +216,7 @@ K =  1/16 [ 2 4 2 ]
 
 |入力 (imori_noise.jpg)|出力 (answer_9.jpg)|
 |:---:|:---:|
-|![](imori_noise.jpg)|![](answers/answer_9.jpg)|
+|![](imori_noise.jpg)|![](answer_9.jpg)|
 
 答え >> answer_9.py
 
@@ -225,6 +231,6 @@ K =  1/16 [ 2 4 2 ]
 
 |入力 (imori_noise.jpg)|出力 (answer_10.jpg)|
 |:---:|:---:|
-|![](imori_noise.jpg)|![](answers/answer_10.jpg)|
+|![](imori_noise.jpg)|![](answer_10.jpg)|
 
 答え >> answer_10.py
